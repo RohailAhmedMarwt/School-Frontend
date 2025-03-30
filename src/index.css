@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@layer utilities {
+    .glow {
+      text-shadow: 0 0 8px rgba(255, 255, 0, 0.8);
+    }
+  }
+  body {
+    overflow-y: scroll;
+  }
