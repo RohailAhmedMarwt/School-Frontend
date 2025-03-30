@@ -1,7 +1,7 @@
 // src/components/AcademicExcellence.jsx
 import rohailImg from "../assets/images/Rohail.jfif";
 import hammadImg from "../assets/images/Ahmad.jfif";
-import bilalImg from "../assets/images/bilal.jfif";
+import bilalImg from "../assets/images/Bilal.jfif";
 
 const AcademicExcellence = () => {
   return (
