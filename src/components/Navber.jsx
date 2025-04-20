@@ -48,7 +48,7 @@ const Navbar = () => {
           </marquee>
         </div>
 
-        <div className="hidden md:flex w-full bg-gray-100 py-1.5 px-6 justify-between items-center text-medium md:text-base">
+        <div className="hidden md:flex w-full bg-gray-100 py-1.4 px-6 justify-between items-center text-medium md:text-base">
           <span className="flex items-center space-x-1">
             <Clock size={16} className="text-green-700" />
             <p className="!text-gray-600">Opened Between 7:00 am - 1:30 pm</p>

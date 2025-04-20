@@ -20,7 +20,7 @@ const AchievementsThisYear = () => {
     <div>
       {/* Top Banner */}
       <div
-        className="relative mt-20 md:mt-33 w-full h-[300px] bg-cover bg-center flex flex-col justify-center items-start text-white"
+        className="relative mt-20 md:mt-31 w-full h-[300px] bg-cover bg-center flex flex-col justify-center items-start text-white"
         style={{ backgroundImage: `url(${bgSchool})` }}
       >
         <div className="absolute inset-0 bg-green-900 opacity-70 z-0"></div>

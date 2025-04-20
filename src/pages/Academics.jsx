@@ -100,7 +100,7 @@ const Academics = () => {
     <div className="flex flex-col min-h-screen bg-gray-50 overflow-x-hidden">
       {/* Header */}
       <div
-        className="relative  mt-20 md:mt-33 w-full h-[300px] bg-cover bg-center flex items-center text-white"
+        className="relative  mt-20 md:mt-31 w-full h-[300px] bg-cover bg-center flex items-center text-white"
         style={{ backgroundImage: `url(${bgSchool})` }}
       >
         <div className="absolute inset-0 bg-green-900 opacity-70"></div>
