@@ -20,7 +20,7 @@ const Login = () => {
       className="min-h-screen bg-gradient-to-br from-black via-green-950 to-black flex items-center justify-center px-4"
     >
       <motion.div
-        className="flex flex-col md:flex-row max-w-5xl w-full rounded-lg overflow-hidden shadow-[0_0_5px_#00ff88] border border-green-500/20 backdrop-blur-xl mt-30"
+        className="flex flex-col md:flex-row max-w-5xl w-full rounded-lg overflow-hidden shadow-[0_0_5px_#00ff88] border border-green-500/20 backdrop-blur-xl mt-32 mb-13 md:mt-38"
         variants={fadeUp}
         custom={0}
       >
