@@ -31,6 +31,8 @@ import VisitRdpindi from "./pages/GalleryAlbum/VisitRdpindi";
 // ✅ AOS Import and Init
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Signup from "./pages/Signup";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -65,6 +67,7 @@ const App = () => {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/principal-message" element={<PrincipalMessage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/achievements-this-year" element={<AchievementsThisYear />} />
         
         <Route path="/gallery/visit-rd-pindi" element={<VisitRdpindi />} />
@@ -79,6 +82,7 @@ const App = () => {
         <Route path="/gallery/environmental-day" element={<EnvironmentalDay />} />
         <Route path="/gallery/sports-day" element={<SportsDay />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 };

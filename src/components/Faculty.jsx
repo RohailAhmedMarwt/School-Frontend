@@ -43,8 +43,8 @@ const facultyMembers = [
 const Faculty = () => {
   useEffect(() => {
     AOS.init({
-      duration: 600,
-      once: true,
+      duration: 300,
+      once: false,
     });
   }, []);
 

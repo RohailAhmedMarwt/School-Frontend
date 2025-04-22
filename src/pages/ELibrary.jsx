@@ -15,7 +15,7 @@ const ELibrary = () => {
         <div className="absolute inset-0 bg-green-900 opacity-70 z-0"></div>
 
         <div className="z-10 w-full max-w-6xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-white">
+          <h1 className="text-2xl md:text-4xl font-bold mb-1">
             E-Library
           </h1>
           <p className="text-sm md:text-base">

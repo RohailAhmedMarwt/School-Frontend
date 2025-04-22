@@ -10,7 +10,6 @@ import bgImage4 from "../assets/images/4.jpeg";
 import bgImage5 from "../assets/images/5.jpeg";
 import WhyChoose from "../components/WhyChoose";
 import AcademicExcellence from "../components/AcademicExcellence";
-import InfrastructureDevelopment from "../components/InfrastructureDevelopment";
 import MissionAndVision from "../components/MissionAndVision";
 
 const images = [bgImage1, bgImage2, bgImage3, bgImage4, bgImage5];
@@ -98,8 +97,7 @@ const Home = () => {
       <AcademicExcellence/>
 
       <MissionAndVision/>
-      
-      <InfrastructureDevelopment/>
+  
     </>
   );
 };

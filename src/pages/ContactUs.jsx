@@ -54,7 +54,7 @@ const ContactUs = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 overflow-x-hidden">
-
+      
       {/* Top Banner */}
       <div
         className="relative mt-20 md:mt-31 w-full h-[300px] bg-cover bg-center flex flex-col justify-center items-start text-white"
@@ -75,14 +75,14 @@ const ContactUs = () => {
         </div>
       </div>
 
-      {/* Content Section */}
+      {/* Content Section (Improvements here) */}
       <div className="w-full max-w-6xl mx-auto px-4 py-10 md:py-16">
         {/* Contact Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <ContactInfo
             icon={MapPin}
             title="Our Location"
-            content="Mansehra Road, Abbottabad, KPK"
+            content="Near FF Center"
           />
           <ContactInfo
             icon={PhoneCall}
@@ -186,7 +186,7 @@ const ContactUs = () => {
             <h2 className="text-2xl font-bold text-green-900 mb-6">Find Us</h2>
             <div className="w-full h-[400px] rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.4425840554385!2d73.21843797621669!3d34.0019499726303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de3111111c97e3%3A0x1c60f0bcc86978d!2sFG%20Public%20School%20Boys%20Piffers%20Abbottabad!5e0!3m2!1sen!2s!4v1711791171599!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.345657165524!2d73.2262207!3d34.163079200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de310bd3907c11%3A0x2b29b4fb226c43ae!2sFG%20Public%20School%20(Boys)%20Piffers%20Abbottabad!5e0!3m2!1sen!2s!4v1745227672412!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
