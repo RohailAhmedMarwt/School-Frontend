@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import bgSchool from "../assets/images/3.jpg";
+import bgSchool from "../assets/images/rc.jpg";
 import { Mail, PhoneCall, MapPin, Clock } from "lucide-react";
 
 const ContactInfo = ({ icon: Icon, title, content, link }) => (

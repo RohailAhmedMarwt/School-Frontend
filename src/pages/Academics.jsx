@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import bgSchool from "../assets/images/3.jpg";
+import bgSchool from "../assets/images/prinmess.jpg";
 import {
   FaBookOpen,
   FaChalkboardTeacher,

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import bgGallery from "../assets/images/prinmess.jpg";
+import bgGallery from "../assets/Galleryimages/dos.jpg";
 import rdpindi from "../assets/Galleryimages/rdpindi.jpg";
 import rdc12 from "../assets/Galleryimages/rdc12.jpg";
 import dos1 from "../assets/Galleryimages/dos1.jpg";

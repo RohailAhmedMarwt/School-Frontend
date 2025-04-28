@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import bgAdmissions from "../assets/images/prinmess.jpg";
+import bgAdmissions from "../assets/images/complab.jpg";
 import { motion } from "framer-motion";
 import { FaUserCheck, FaFileAlt, FaClipboardList } from "react-icons/fa";
 

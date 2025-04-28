@@ -130,44 +130,84 @@ const Navbar = () => {
       </nav>
 
       {open && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+  <motion.div
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    transition={{ duration: 0.4, ease: "easeInOut" }}
+    className="md:hidden bg-white shadow-md p-4 flex flex-col items-center text-center w-full"
+  >
+    {/* Nav Links */}
+    <motion.ul
+      initial="hidden"
+      animate="visible"
+      variants={{
+        visible: {
+          transition: {
+            staggerChildren: 0.1,
+          },
+        },
+      }}
+      className="flex flex-col space-y-6 w-full"
+    >
+      {navLinks.map((link, index) => (
+        <motion.li
+          key={index}
+          variants={{
+            hidden: { opacity: 0, y: -20 },
+            visible: { opacity: 1, y: 0 },
+          }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="md:hidden bg-white shadow-md p-4 flex flex-col space-y-6 items-center text-center w-full"
         >
-          {navLinks.map((link, index) => (
-            <Link
-              key={index}
-              to={link.path}
-              onClick={() => setOpen(false)}
-              className={`w-full text-[16px] font-semibold ${
-                location.pathname === link.path ? "text-green-900" : "text-gray-500"
-              }`}
-            >
-              {link.name}
-            </Link>
-          ))}
-          <div className="flex space-x-4 mt-4">
-            <a href="https://youtube.com/@fgeimediaofficial?si=Zvov1V0iiDeT_Ktm" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="text-red-600 text-xl transition-transform transform hover:scale-110" />
-            </a>
-            <a href="https://www.facebook.com/share/1R2nzwDVCo/" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-blue-600 text-xl transition-transform transform hover:scale-110" />
-            </a>
-            <a href="https://www.linkedin.com/company/fgeischool/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-blue-500 text-xl transition-transform transform hover:scale-110" />
-            </a>
-          </div>
-          <Link to="/login">
-          <motion.button whileHover={{ scale: 1.05 }} className="bg-green-900 text-gray-200 px-6 py-3 w-full rounded-md flex justify-center">
-            <span>Login</span>
-            <User size={18} />
-          </motion.button>
+          <Link
+            to={link.path}
+            onClick={() => setOpen(false)}
+            className={`w-full text-[16px] font-semibold ${
+              location.pathname === link.path ? "text-green-900" : "text-gray-500"
+            }`}
+          >
+            {link.name}
           </Link>
-        </motion.div>
-        
-      )}
+        </motion.li>
+      ))}
+    </motion.ul>
+
+    {/* Social Icons — same direction: uper se nicha */}
+    <motion.div
+      initial={{ opacity: 0, y: -60 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5 }}
+      className="flex space-x-4 mt-4"
+    >
+      <a href="https://youtube.com/@fgeimediaofficial?si=Zvov1V0iiDeT_Ktm" target="_blank" rel="noopener noreferrer">
+        <FaYoutube className="text-red-600 text-xl transition-transform transform hover:scale-110" />
+      </a>
+      <a href="https://www.facebook.com/share/1R2nzwDVCo/" target="_blank" rel="noopener noreferrer">
+        <FaFacebook className="text-blue-600 text-xl transition-transform transform hover:scale-110" />
+      </a>
+      <a href="https://www.linkedin.com/company/fgeischool/" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin className="text-blue-500 text-xl transition-transform transform hover:scale-110" />
+      </a>
+    </motion.div>
+
+    {/* Login Button — same direction: uper se nicha */}
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.7 }}
+      className="mt-4"
+    >
+      <Link to="/login" onClick={() => setOpen(false)}>
+        <motion.button whileHover={{ scale: 1.05 }} className="bg-green-900 text-white px-26 py-2 rounded-md flex justify-center items-center">
+          <span>Login</span>
+          <User size={17} />
+        </motion.button>
+      </Link>
+    </motion.div>
+  </motion.div>
+)}
+
+
     </div>
   );
 };

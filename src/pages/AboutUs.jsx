@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import bgSchool from "../assets/images/3.jpg";
+import bgSchool from "../assets/images/space.jpg";
 import introImage from "../assets/images/intro.jpg";
 import mission from "../assets/images/mission1.png";
 import vision from "../assets/images/vision1.png";
